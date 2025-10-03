@@ -1,0 +1,171 @@
+body{
+    height : 100vh ;
+    width : 100vw ;
+    font-family : monospace;
+    background-color : black ;
+    color : white ;
+}
+header{
+    display : flex ;
+    justify-content : center ;
+    align-items : center ; 
+}
+header > div{
+    height : 100% ;
+    width : 18% ;
+    padding : 1% ;
+    background-color : rgb(255, 255, 255 , 0.2);
+    border : 1px solid black ;
+    border-radius : 10px ;
+}
+header > div:hover{
+    animation-name: ani3 ;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+main{
+    height : 80% ;
+    width : 95% ;
+    margin : 2.5% ;
+    display : flex ;
+    flex-direction : column ;
+    align-items : center ;
+}
+section{
+    height : 200% ;
+    width : 100% ;
+    margin : 1% ;
+    padding : 1% ;
+    box-sizing: border-box;
+}
+.container{
+    height : 100% ;
+    width : 100% ;
+    display : flex ;
+    justify-content : space-evenly;
+}
+align{
+    height : 100% ;
+    width : 50% ;
+}
+.content{
+    height : 100% ;
+    width : 50% ;
+}
+img{
+    height : 80% ;
+    width : 80% ;
+    margin : 6% ;
+    border : 1px solid black ;
+    border-radius : 10px ;
+    animation-name: ani5 ;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+a{
+    height : 8% ;
+    width : 100% ;
+}
+img:hover{
+    animation-name: ani3 ;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.write{
+    height : 70% ;
+    width : 90% ;
+    margin : 5% 5% 1% 5% ;
+    padding : 2% ;
+    background-color : rgb(255, 255, 255 , 0.2);
+    border : 1px solid black ;
+    border-radius : 10px ;
+    animation-name: ani5 ;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+button{
+    height : 6% ;
+    width : 100% ;
+    background-color: burlywood;
+}
+.first:hover{
+    animation-name: ani1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.second:hover{
+    animation-name: ani2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+button:active{
+    animation-name: ani4;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+video{
+    height : 70% ;
+    width : 80% ;
+    margin : 6% ;
+    border : 1px solid black ;
+    border-radius : 10px ;
+    animation-name: ani5 ;
+    animation-duration: 1s ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+video:hover{
+    animation-name: ani3 ;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes ani1{
+    0%{
+        box-shadow : 0% 0% ;
+    }
+    100%{
+        box-shadow : 0px 0px 10px burlywood;
+    }
+}
+@keyframes ani2{
+    0%{
+        box-shadow : 0% 0% ;
+    }
+    100%{
+        box-shadow : 0px 0px 10px pink;
+    }
+}
+@keyframes ani3{
+    0%{
+        box-shadow : 0% 0% ;
+    }
+    100%{
+        box-shadow : 0px 0px 10px white;
+    }
+}
+@keyframes ani4{
+    0%{
+        background-color : black;
+        color : white ;
+    }
+    100%{
+        background-color : black;
+        color : white ;
+    }
+}
+@keyframes ani5{
+    0%{
+        rotate : 30deg ;
+    }
+    100%{
+        rotate : 0deg ;
+    }
+}
